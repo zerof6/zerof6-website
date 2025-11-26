@@ -1,0 +1,37 @@
+:root {
+  /* primary variables */
+  --background: #000000;
+  --foreground: #FFFFFF;
+}
+:root[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+/* apply variables globally */
+html, body {
+  height: 100%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  cursor: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'></svg>") 32 32, auto;
+}
+#main{
+width: 100%;
+height: 100%;
+position: relative;
+}
+#f{
+  width: 32px;
+  height: 32px;
+  background-color: var(--foreground);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
